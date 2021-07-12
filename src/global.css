@@ -1,0 +1,10 @@
+@layer base {
+  @font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/lato.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Cormorant";
+    src: url("assets/fonts/cormorant.ttf") format("truetype");
+  }
+}

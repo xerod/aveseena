@@ -3,6 +3,7 @@ import App from "./App.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import routes from "voie-pages";
 import "virtual:windi.css";
+import "./global.css";
 
 const router = createRouter({
   history: createWebHistory(),
