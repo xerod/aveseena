@@ -28,7 +28,7 @@
               name="emailAddress"
               type="email"
               autocomplete="email"
-              required=""
+              required="true"
               class="
                 w-full
                 px-5

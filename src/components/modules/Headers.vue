@@ -24,150 +24,26 @@
           <PopoverButton
             class="
               bg-white
-              rounded-md
               p-2
               inline-flex
               items-center
               justify-center
-              text-gray-400
-              hover:text-gray-500 hover:bg-gray-100
+              text-warm-gray-400
+              hover:text-warm-gray-500 hover:bg-warm-gray-100
               focus-visible:outline-none
               focus-visible:ring-2
               focus-visible:ring-inset
-              focus-visible:ring-indigo-500
+              focus-visible:ring-gold-sand-500
             "
           >
             <span class="sr-only">Open menu</span>
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
         </div>
-        <PopoverGroup as="nav" class="hidden md:flex space-x-10">
-          <Popover class="relative" v-slot="{ open }">
-            <PopoverButton
-              :class="[
-                open ? 'text-black' : 'text-gray-900',
-                'group bg-white rounded-md inline-flex items-center text-base hover:text-gray-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 hover:cursor-pointer',
-              ]"
-            >
-              <span>Shop Now</span>
-              <ChevronDownIcon
-                :class="[
-                  open ? 'text-gray-600' : 'text-gray-800',
-                  'ml-2 h-5 w-5 group-hover:text-gray-700',
-                ]"
-                aria-hidden="true"
-              />
-            </PopoverButton>
-
-            <transition
-              enter-active-class="transition ease-out duration-200"
-              enter-from-class="opacity-0 translate-y-1"
-              enter-to-class="opacity-100 translate-y-0"
-              leave-active-class="transition ease-in duration-150"
-              leave-from-class="opacity-100 translate-y-0"
-              leave-to-class="opacity-0 translate-y-1"
-            >
-              <PopoverPanel
-                class="
-                  absolute
-                  z-10
-                  -ml-4
-                  mt-3
-                  transform
-                  px-2
-                  w-screen
-                  max-w-md
-                  sm:px-0
-                  lg:ml-0 lg:left-1/2 lg:-translate-x-1/2
-                "
-              >
-                <div
-                  class="
-                    rounded-lg
-                    shadow-lg
-                    ring-1 ring-black ring-opacity-5
-                    overflow-hidden
-                  "
-                >
-                  <div
-                    class="
-                      relative
-                      grid
-                      gap-6
-                      bg-white
-                      px-5
-                      py-6
-                      sm:gap-8 sm:p-8
-                    "
-                  >
-                    <a
-                      v-for="item in solutions"
-                      :key="item.name"
-                      :href="item.href"
-                      class="
-                        -m-3
-                        p-3
-                        flex
-                        items-start
-                        rounded-lg
-                        hover:bg-gray-50
-                      "
-                    >
-                      <component
-                        :is="item.icon"
-                        class="flex-shrink-0 h-6 w-6 text-indigo-600"
-                        aria-hidden="true"
-                      />
-                      <div class="ml-4">
-                        <p class="text-base text-gray-900">
-                          {{ item.name }}
-                        </p>
-                        <p class="mt-1 text-sm text-gray-500">
-                          {{ item.description }}
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="
-                      px-5
-                      py-5
-                      bg-gray-50
-                      space-y-6
-                      sm:flex sm:space-y-0 sm:space-x-10 sm:px-8
-                    "
-                  >
-                    <div
-                      v-for="item in callsToAction"
-                      :key="item.name"
-                      class="flow-root"
-                    >
-                      <a
-                        :href="item.href"
-                        class="
-                          -m-3
-                          p-3
-                          flex
-                          items-center
-                          rounded-md
-                          text-base text-gray-900
-                          hover:bg-gray-100
-                        "
-                      >
-                        <component
-                          :is="item.icon"
-                          class="flex-shrink-0 h-6 w-6 text-gray-400"
-                          aria-hidden="true"
-                        />
-                        <span class="ml-3">{{ item.name }}</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </PopoverPanel>
-            </transition>
-          </Popover>
-
+        <PopoverGroup as="nav" class="hidden md:flex space-x-10 z-30">
+          <a href="#" class="text-base text-black hover:text-gray-700">
+            Shop Now
+          </a>
           <a href="#" class="text-base text-black hover:text-gray-700">
             Pricing
           </a>
@@ -179,7 +55,7 @@
             <PopoverButton
               :class="[
                 open ? 'text-black' : 'text-gray-900',
-                'group bg-white rounded-md inline-flex items-center text-base hover:text-gray-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 hover:cursor-pointer',
+                'group bg-white  inline-flex items-center text-base hover:text-gray-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gold-sand-500 hover:cursor-pointer',
               ]"
             >
               <span>More</span>
@@ -216,7 +92,6 @@
               >
                 <div
                   class="
-                    rounded-lg
                     shadow-lg
                     ring-1 ring-black ring-opacity-5
                     overflow-hidden
@@ -237,33 +112,33 @@
                       v-for="item in resources"
                       :key="item.name"
                       :href="item.href"
-                      class="
-                        -m-3
-                        p-3
-                        flex
-                        items-start
-                        rounded-lg
-                        hover:bg-gray-50
-                      "
+                      class="-m-3 p-3 flex items-start hover:bg-warm-gray-50"
                     >
                       <component
                         :is="item.icon"
-                        class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                        class="flex-shrink-0 h-6 w-6 text-gold-sand-600"
                         aria-hidden="true"
                       />
                       <div class="ml-4">
                         <p class="text-base text-gray-900">
                           {{ item.name }}
                         </p>
-                        <p class="mt-1 text-sm text-gray-500">
+                        <p class="mt-1 text-sm text-warm-gray-500">
                           {{ item.description }}
                         </p>
                       </div>
                     </a>
                   </div>
-                  <div class="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
+                  <div class="px-5 py-5 bg-warm-gray-50 sm:px-8 sm:py-8">
                     <div>
-                      <h3 class="text-sm tracking-wide text-gray-500 uppercase">
+                      <h3
+                        class="
+                          text-sm
+                          tracking-wide
+                          text-warm-gray-500
+                          uppercase
+                        "
+                      >
                         Recent Posts
                       </h3>
                       <ul class="mt-4 space-y-4">
@@ -282,7 +157,10 @@
                       </ul>
                     </div>
                     <div class="mt-5 text-sm">
-                      <a href="#" class="text-indigo-600 hover:text-indigo-500">
+                      <a
+                        href="#"
+                        class="text-gold-sand-600 hover:text-gold-sand-500"
+                      >
                         View all posts <span aria-hidden="true">&rarr;</span></a
                       >
                     </div>
@@ -328,11 +206,11 @@
           transform
           origin-top-right
           md:hidden
+          z-30
         "
       >
         <div
           class="
-            rounded-lg
             shadow-lg
             ring-1 ring-black ring-opacity-5
             bg-white
@@ -341,28 +219,21 @@
         >
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
-              <div>
-                <img
-                  class="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                  alt="Workflow"
-                />
-              </div>
+              <div></div>
               <div class="-mr-2">
                 <PopoverButton
                   class="
                     bg-white
-                    rounded-md
                     p-2
                     inline-flex
                     items-center
                     justify-center
-                    text-gray-400
-                    hover:text-gray-500 hover:bg-gray-100
+                    text-warm-gray-400
+                    hover:text-warm-gray-500 hover:bg-warm-gray-100
                     focus-visible:outline-none
                     focus-visible:ring-2
                     focus-visible:ring-inset
-                    focus-visible:ring-indigo-500
+                    focus-visible:ring-gold-sand-500
                   "
                 >
                   <span class="sr-only">Close menu</span>
@@ -373,14 +244,14 @@
             <div class="mt-6">
               <nav class="grid gap-y-8">
                 <a
-                  v-for="item in solutions"
+                  v-for="item in resources"
                   :key="item.name"
                   :href="item.href"
-                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                  class="-m-3 p-3 flex items-center hover:bg-warm-gray-50"
                 >
                   <component
                     :is="item.icon"
-                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                    class="flex-shrink-0 h-6 w-6 text-gold-sand-600"
                     aria-hidden="true"
                   />
                   <span class="ml-3 text-base text-gray-900">
@@ -419,20 +290,19 @@
                   px-4
                   py-2
                   border border-transparent
-                  rounded-md
                   shadow-sm
                   text-base text-white
-                  bg-indigo-600
-                  hover:bg-indigo-700
+                  bg-black
+                  hover:bg-warm-gray-800
                 "
               >
                 Sign up
               </a>
-              <p class="mt-6 text-center text-base text-gray-500">
-                Existing customer?
+              <p class="mt-6 text-center text-base text-warm-gray-500">
+                Got Questions?
                 {{ " " }}
-                <a href="#" class="text-indigo-600 hover:text-indigo-500">
-                  Sign in
+                <a href="#" class="text-gold-sand-600 hover:text-gold-sand-500">
+                  Contact Us
                 </a>
               </p>
             </div>
@@ -519,32 +389,40 @@ const resources = [
   {
     name: "Guides",
     description:
-      "Learn how to maximize our platform to get the most out of it.",
+      "Get our e-book on how to Sit aliquid et qui repellat ut debitis adipisci.",
     href: "#",
     icon: BookmarkAltIcon,
   },
   {
     name: "Events",
     description:
-      "See what meet-ups and other events we might be planning near you.",
+      "See our meet-ups and other events we might be planning near you.",
     href: "#",
     icon: CalendarIcon,
   },
   {
-    name: "Security",
+    name: "Privacy",
     description: "Understand how we take your privacy seriously.",
     href: "#",
     icon: ShieldCheckIcon,
   },
 ];
 const recentPosts = [
-  { id: 1, name: "Boost your conversion rate", href: "#" },
   {
-    id: 2,
-    name: "How to use search engine optimization to drive traffic to your site",
+    id: 1,
+    name: "Safe beauty's impact on the clean beauty movement",
     href: "#",
   },
-  { id: 3, name: "Improve your customer experience", href: "#" },
+  {
+    id: 2,
+    name: "Everything you need to know to save your skin microbiome",
+    href: "#",
+  },
+  {
+    id: 3,
+    name: "Why should I care about endocrine disruptors in my skin care?",
+    href: "#",
+  },
 ];
 
 export default {

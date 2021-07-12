@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full">
+  <div class="flex flex-col lg:flex-row w-full">
     <div class="flex relative justify-center items-center bg-gold-sand-900">
       <div class="absolute z-10 text-center">
         <div class="text-white space-y-2">
@@ -36,7 +36,7 @@
           SHOP NOW
         </button>
       </div>
-      <img src="../../assets/product-1.png" alt="" class="bg-mask-b-0" />
+      <img src="../../assets/product-1.png" alt="" class="w-full bg-mask-b-0" />
     </div>
     <div class="flex relative justify-center items-center bg-gold-sand-900">
       <div class="absolute z-10 text-center">
@@ -72,7 +72,7 @@
           SHOP NOW
         </button>
       </div>
-      <img src="../../assets/product-2.png" alt="" class="bg-mask-b-0" />
+      <img src="../../assets/product-2.png" alt="" class="w-full bg-mask-b-0" />
     </div>
   </div>
 </template>
