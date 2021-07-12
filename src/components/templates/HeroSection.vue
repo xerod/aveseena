@@ -69,7 +69,7 @@
               >
                 Clean Beauty
               </p>
-              <p class="mt-6 text-xl text-linen-900 font-lato italic">
+              <p class="mt-6 text-xl text-linen-900 font-lato font-light">
                 Because we care so deeply about your skin, we make it easier to
                 switch by recommending different product tailored to your needs.
                 All directly to your email!
