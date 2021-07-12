@@ -13,4 +13,12 @@
     font-family: "Cormorant";
     src: url("assets/fonts/cormorant.ttf") format("truetype");
   }
+  @font-face {
+    font-family: "Antro Vectra";
+    src: url("assets/fonts/antro-vectra-400.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Antro Vectra";
+    src: url("assets/fonts/antro-vectra-500.otf") format("opentype");
+  }
 }

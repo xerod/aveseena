@@ -3,6 +3,7 @@
     <SmallBanner />
     <Header />
     <HeroSection />
+    <DetailSection />
   </div>
 </template>
 
@@ -11,12 +12,14 @@ import { defineComponent } from "vue";
 import SmallBanner from "../components/modules/SmallBanner.vue";
 import Header from "../components/modules/Headers.vue";
 import HeroSection from "../components/templates/HeroSection.vue";
+import DetailSection from "../components/templates/DetailSection.vue";
 
 export default defineComponent({
   components: {
     SmallBanner,
     Header,
     HeroSection,
+    DetailSection,
   },
   setup() {},
 });

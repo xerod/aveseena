@@ -450,6 +450,7 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from "@headlessui/vue";
+// @ts-ignore
 import {
   BookmarkAltIcon,
   CalendarIcon,
@@ -465,8 +466,8 @@ import {
   XIcon,
   ShoppingBagIcon,
   HeartIcon,
-} from "@heroicons/vue/outline";
-import { ChevronDownIcon } from "@heroicons/vue/solid";
+} from "@heroicons/vue/outline"; // @ts-ignore
+import { ChevronDownIcon } from "@heroicons/vue/solid"; // @ts-ignore
 import Logo from "../elements/Logo.vue";
 
 const solutions = [
