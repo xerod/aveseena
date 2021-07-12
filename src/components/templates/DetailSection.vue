@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-bridal-heath-300 py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+  <div class="bg-bridal-heath-400 py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       <div class="text-center">
         <h2 class="text-4xl text-gold-sand-800 tracking-wide font-antro">
@@ -25,8 +25,8 @@
             font-lato font-light
           "
         >
-          In Europe, roughly 1300 toxic ingredients are banned from beauty
-          products. Surprisingly, only 11 are banned in the US.
+          In Europe, roughly <i>1300 toxic ingredients</i> are banned from
+          beauty products. Surprisingly, only 11 are banned in the US.
         </p>
       </div>
     </div>
@@ -66,19 +66,22 @@ import { defineComponent } from "vue";
 
 const items = [
   {
-    title: "No Harmfull Chemicals",
+    id: 1,
+    title: "Pioneer in Immunocosmetics",
     description:
-      "Sit aliquid et qui repellat ut debitis adipisci. Distinctio voluptatum quia aut ut. Provident qui nisi architecto accusamus totam sequi minus quis et.",
+      "AveSeena is a pioneer in Immunocosmetics focusing on Dermoimmuno wellness for healthier looking skin.",
   },
   {
-    title: "No Harmfull Chemicals",
+    id: 2,
+    title: "Safe Ingredients for Environment and your skin",
     description:
-      "Sit aliquid et qui repellat ut debitis adipisci. Distinctio voluptatum quia aut ut. Provident qui nisi architecto accusamus totam sequi minus quis et.",
+      "We do not formulate with ingredients that could cause harm to ourselves or our environment and have a strict 'No' / H-FREE list.",
   },
   {
-    title: "No Harmfull Chemicals",
+    id: 3,
+    title: "Excellence in Formulation",
     description:
-      "Sit aliquid et qui repellat ut debitis adipisci. Distinctio voluptatum quia aut ut. Provident qui nisi architecto accusamus totam sequi minus quis et.",
+      "We proudly follow scientific results and passionately research to provide the benefits skin needs.",
   },
 ];
 
