@@ -1,5 +1,6 @@
 // windi.config.ts
 import { defineConfig } from "windicss/helpers";
+import plugin from "windicss/plugin";
 
 export default defineConfig({
   important: true,
@@ -81,5 +82,21 @@ export default defineConfig({
   plugins: [
     // ...
     require("windicss/plugin/forms"),
+    plugin(({ addUtilities }) => {
+      addUtilities({
+        ".bg-mask-t-0": {
+          "-webkit-mask-image":
+            "linear-gradient(to top, rgba(0, 0, 0, 0.4) 60%, transparent 100%)",
+          maskImage:
+            "linear-gradient(to top, rgba(0, 0, 0, 0.4) 60%, transparent 100%)",
+        },
+        ".bg-mask-b-0": {
+          "-webkit-mask-image":
+            "linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 60%, transparent 100%)",
+          maskImage:
+            "linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 60%, transparent 100%)",
+        },
+      });
+    }),
   ],
 });
