@@ -7,6 +7,7 @@
     <HighlightSection />
     <TestimonialSection />
     <NewsletterSection />
+    <FooterSection />
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import DetailSection from "../components/templates/DetailSection.vue";
 import HighlightSection from "../components/templates/HighlightSection.vue";
 import TestimonialSection from "../components/templates/TestimonialSection.vue";
 import NewsletterSection from "../components/templates/NewsletterSection.vue";
+import FooterSection from "../components/templates/FooterSection.vue";
 
 export default defineComponent({
   components: {
@@ -29,6 +31,7 @@ export default defineComponent({
     HighlightSection,
     TestimonialSection,
     NewsletterSection,
+    FooterSection,
   },
   setup() {},
 });
