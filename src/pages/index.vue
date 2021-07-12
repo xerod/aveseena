@@ -5,6 +5,7 @@
     <HeroSection />
     <DetailSection />
     <HighlightSection />
+    <TestimonialSection />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import Header from "../components/modules/Headers.vue";
 import HeroSection from "../components/templates/HeroSection.vue";
 import DetailSection from "../components/templates/DetailSection.vue";
 import HighlightSection from "../components/templates/HighlightSection.vue";
+import TestimonialSection from "../components/templates/TestimonialSection.vue";
 
 export default defineComponent({
   components: {
@@ -23,6 +25,7 @@ export default defineComponent({
     HeroSection,
     DetailSection,
     HighlightSection,
+    TestimonialSection,
   },
   setup() {},
 });
