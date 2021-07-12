@@ -54,7 +54,7 @@
                 </svg>
 
                 <div class="text-base font-medium text-gray-500">
-                  CEO, Workcation
+                  CEO, yesbeauty.com
                 </div>
               </div>
             </div>
